@@ -1,4 +1,4 @@
-public class RPGCharacter {
+
 
     /*Create a program that calculates an RPG Character's battle stats based on the character's physical stats.
     The physical and battle stat can be anything you wish provided it meets these criteria:
