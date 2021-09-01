@@ -10,9 +10,37 @@
 
      The program should run using dialog boxes and the output should show ALL the character's stats including a name.
      */
-
+    import javax.swing.JOptionPane;
  public class RPGCharacter{
 
+     public static void main(String [] args) {
+         int name;
+         String input;
+         int strength;
+         int energy;
+         int dexterity;
+         int spirit;
+
+         input = JOptionPane.showInputDialog("Enter Character's Name:");
+         name = Integer.parseInt(input);
+
+         input = JOptionPane.showInputDialog("Enter Strength:");
+         strength = Integer.parseInt(input);
+
+         input = JOptionPane.showInputDialog("Enter Energy:");
+         energy = Integer.parseInt(input);
+
+         input = JOptionPane.showInputDialog("Enter Dexterity:");
+         dexterity = Integer.parseInt(input);
+
+         input = JOptionPane.showInputDialog("Enter Spirit:");
+         spirit = Integer.parseInt(input);
+
+         JOptionPane.showMessageDialog(null, "Character: " + name + "\n" + "Total Strength: " + strength + "\n" + "Total Energy: " + energy + "\n" + "Total Dexterity: " + dexterity + "\n" + "Total Spirit: " + spirit);
+
+
+
+     }
     }
 
 
