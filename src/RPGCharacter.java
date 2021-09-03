@@ -17,6 +17,7 @@ public class RPGCharacter {
 
 
             public static void main(String [] args) {
+
                 String name;
                 String input;
                 int strength;
@@ -28,10 +29,11 @@ public class RPGCharacter {
                 int manacapacity;
                 int spell;
 
-                int combination;
 
-                input = JOptionPane.showInputDialog("Enter Character's Name:");
-                name = JOptionPane.showInputDialog("What is your name");
+
+
+
+                name = JOptionPane.showInputDialog("What is your character name:");
 
                 input = JOptionPane.showInputDialog("Enter Strength:");
                 strength = Integer.parseInt(input);
@@ -45,9 +47,12 @@ public class RPGCharacter {
                 input = JOptionPane.showInputDialog("Enter Spirit:");
                 spirit = Integer.parseInt(input);
 
-                combination = (strength * 10)/armor;
+damage = 100 - strength;
+armor = 100 - energy;
+spell = 100 - dexterity;
+manacapacity = 100 - (energy+strength);
 
-                JOptionPane.showMessageDialog(null, "Character: " + name + "\n" + "Total Strength: " + strength + "\n" + "Total Energy: " + energy + "\n" + "Total Dexterity: " + dexterity + "\n" + "Total Spirit: " + spirit);
+                JOptionPane.showMessageDialog(null, "Character: " + name + "\n" + "Total Strength: " + strength + "\n" + "Total Energy: " + energy + "\n" + "Total Dexterity: " + dexterity + "\n" + "Total Spirit: " + spirit + "\n" + "Total Damage: " + damage + "\n" + "Total Armor: " + armor + "\n" + "Total Spell: " + spell + "\n" + "Total Manacapacity: " + manacapacity);
 
 
 

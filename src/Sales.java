@@ -50,7 +50,7 @@
         salestax = Integer.parseInt(input);
 
         subtotal=(price * quantity) - discount;
-        taxtotal=Math.round(subtotal * salestax)/10;
+        taxtotal=(subtotal * Math.round(salestax)/100.0);
         totalcost= subtotal + taxtotal;
 
         JOptionPane.showMessageDialog(null, "Total Cost:$" + subtotal + "\n" + "Tax Total:$" + taxtotal + "\n" + "Total Cost:$" + totalcost);
