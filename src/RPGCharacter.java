@@ -47,7 +47,7 @@ public class RPGCharacter {
                 input = JOptionPane.showInputDialog("Enter Spirit:");
                 spirit = Integer.parseInt(input);
 
-damage = 100 - strength;
+damage = 101 - strength;
 armor = 100 - energy;
 spell = 100 - dexterity;
 manacapacity = 100 - (energy+strength);
